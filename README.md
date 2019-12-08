@@ -18,3 +18,33 @@ K6IXATEF43-eyJsaWNlbnNlSWQiOiJLNklYQVRFRjQzIiwibGljZW5zZWVOYW1lIjoi5o6I5p2D5Luj5
 
 brew upgrade go
 ```
+
+
+## run by nohub
+
+  把程序保存后台并长时间运行，这里用到的命令是nohup
+  
+  nohup 加上运行程序的命令后面加上&符号
+  
+  
+  ```
+  nohub go run main.go &
+  
+  nohub ./main &
+  
+  ```
+  
+  当序已经保持在后台运行，可以用jobs命令查看
+     
+    ```
+    jobs
+    ```
+    
+    当然，我们可以使用fg命令把进程转到前台运行 fg 进程id号
+    
+    ```
+    fg 1
+    ```
+
+     
+    
