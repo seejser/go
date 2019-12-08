@@ -27,12 +27,17 @@ brew upgrade go
   nohup 加上运行程序的命令后面加上&符号
   
   
+  
+  
   ```
   nohub go run main.go &
   
   nohub ./main &
   
   ```
+  
+  
+  
   
   当序已经保持在后台运行，可以用jobs命令查看
      
@@ -44,6 +49,9 @@ brew upgrade go
     
     ```
     fg 1
+    
+    
+    
     ```
 
      
