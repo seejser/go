@@ -30,9 +30,9 @@ brew upgrade go
   
   
   ```
-  nohub go run main.go &
+  nohup go run main.go &
   
-  nohub ./main &
+  nohup ./main &
   
   ```
   
