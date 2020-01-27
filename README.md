@@ -62,3 +62,31 @@ brew upgrade go
     CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o live.out *.go
     
     ```
+    
+    
+ 
+## go module
+
+```
+export GOFLAGS=" -mod="  
+
+
+ export GO111MODULE=on  
+ 
+ 
+ 
+ export GOPROXY=https://goproxy.io  
+ 
+ 
+ //or
+ 
+ 
+ go env -w GOPROXY=https://goproxy.io,direct
+# Set environment variable allow bypassing the proxy for selected modules
+go env -w GOPRIVATE=*.corp.example.com
+go env -w GO111MODULE=on
+
+
+ 
+ 
+```
