@@ -90,3 +90,15 @@ go env -w GO111MODULE=on
  
  
 ```
+
+
+## curl
+
+```
+//get
+curl "http://localhost:8766/v1/email/n/1"
+
+
+//post
+curl -X POST "http://localhost:8766/api/v1/cat" -d '{"name": "test"}'
+```
