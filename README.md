@@ -71,7 +71,8 @@ brew upgrade go
 ## go module
 
 ```
-export GOFLAGS=" -mod="  
+
+export GOFLAGS=" -mod=readonly"
 
 
  export GO111MODULE=on  
